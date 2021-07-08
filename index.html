@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/index.css">
+    <title>Biglietteria</title>
+</head>
+<body>
+    <!-- Sezione di intestazione sito -->
+    <header>
+        <h1 class="mb-30">Calcola il prezzo del tuo biglietto</h1>
+    </header>
+
+    <main>
+        <!-- Sezione di inserimento dati -->
+        <section>
+            <!-- Nome -->
+            <div class="mb-10">
+                <label for="passenger_name">Inserire il proprio nome:</label>
+                <input type="text" id="passenger_name">
+            </div>
+            <!-- Km -->
+            <div class="mb-10">
+                <label for="passenger_kms">Inserire il numero di Km da percorrere:</label>
+                <input type="number" min="10" step="1" value="10">
+            </div>
+            <!-- Età -->
+            <div class="mb-10">
+                <label for="passenger_age">Inserire la propria età</label>
+                <select name="passenger_age" id="passenger_age">
+                    <option value="under18">under18</option>
+                    <option value="over18">over18</option>
+                    <option value="over65">over65</option>
+                </select>
+            </div>
+            <div class="mb-30">
+                <button id="generate_ticket">Genera biglietto</button>
+                <button id="reset">Resetta</button>
+            </div>
+        </section>
+
+        <hr class="mb-30">
+
+        <!-- Sezione di stampa dati -->
+        <section class="hidden">
+            <h2 class="mb-30">Il tuo biglietto</h2>
+            <div>Nome passeggero: <span id="passenger_name_printed"></span></div>
+            <div>Offerta: <span id="passenger_discount_printed"></span></div>
+            <div>Carrozza: <span id="car_number"></span></div>
+            <div>Codice treno: <span id="train_code"></span></div>
+            <div>Prezzo del biglietto: <span id="final_price"></span></div>
+        </section>
+    </main>
+
+
+</body>
+</html>
