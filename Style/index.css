@@ -13,6 +13,10 @@ body {
     visibility: hidden;
 }
 
+.visible {
+    visibility: visible;
+}
+
 /* spacing properties */
 .mb-30 {
     margin-bottom: 30px;

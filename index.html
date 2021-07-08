@@ -24,14 +24,14 @@
             <!-- Km -->
             <div class="mb-10">
                 <label for="passenger_kms">Inserire il numero di Km da percorrere:</label>
-                <input type="number" min="10" step="1" value="10">
+                <input type="number" id="passenger_kms" min="10" step="1" value="10">
             </div>
             <!-- Età -->
             <div class="mb-10">
                 <label for="passenger_age">Inserire la propria età</label>
                 <select name="passenger_age" id="passenger_age">
-                    <option value="under18">under18</option>
                     <option value="over18">over18</option>
+                    <option value="under18">under18</option>
                     <option value="over65">over65</option>
                 </select>
             </div>
@@ -44,7 +44,7 @@
         <hr class="mb-30">
 
         <!-- Sezione di stampa dati -->
-        <section class="hidden">
+        <section id="print_ticket" class="hidden">
             <h2 class="mb-30">Il tuo biglietto</h2>
             <div>Nome passeggero: <span id="passenger_name_printed"></span></div>
             <div>Offerta: <span id="passenger_discount_printed"></span></div>
@@ -52,6 +52,7 @@
             <div>Codice treno: <span id="train_code"></span></div>
             <div>Prezzo del biglietto: <span id="final_price"></span></div>
         </section>
+        <script src="./js/index.js"></script>
     </main>
 
 
